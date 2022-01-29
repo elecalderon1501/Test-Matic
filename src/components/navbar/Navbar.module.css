@@ -1,0 +1,12 @@
+.navbar {
+ display:inline-block;
+  
+}
+.navbaritems{
+    display: inline-block;
+    flex-direction: column;
+}
+.items li{
+  display: inline-block;
+  padding: 5vh;
+}

@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className={style.navbar}>
       <div>
-        <h2>easy bank</h2>
+        {/* <h2>easy bank</h2> */}
       </div>
       <div className={style.items}>
         <ul>

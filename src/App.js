@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
-import AllArticles from './components/articles/AllArticles'
 import Footer from './components/footer/Footer'
+import LatestArticles from './components/articles/LatestArticles'
 import Hero from './components/hero/Hero'
 import Navbar from './components/navbar/Navbar'
 
@@ -10,7 +10,7 @@ function App() {
       <Fragment>
         <Navbar />
         <Hero />
-        <AllArticles />
+        <LatestArticles/>
         <Footer />
       </Fragment>
     </div>

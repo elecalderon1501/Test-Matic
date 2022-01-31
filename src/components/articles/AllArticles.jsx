@@ -1,32 +1,32 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import Articles from './LatestArticles'
 import style from './Articles.modules.css'
+import CreateArticle from './CreateArticle'
 
 export default function AllArticles() {
-  const [searchArticles, setSearchArticles] = useState([])
+  const [allArticles, setAllArticles] = useState([])
 
   const consultarApi = async () => {
     const url = `https://servicepad-post-api.herokuapp.com/articles/`
     const respuesta = await axios.get(url)
     console.log(respuesta.data.data)
-    setSearchArticles(respuesta.data.data)
+    setAllArticles(respuesta.data.data)
   }
-
+  
   useEffect(() => {
     consultarApi()
-  }, [searchArticles])
+  }, [allArticles])
 
   return (
     <div>
       <ul>
-        {searchArticles.map(el => (
-          <>         
-            <img key={el.id}  src={el.image_url} alt='imagen'></img>
+        {allArticles.map(el => (
+          <div key={el.id} className='allArticles' >         
+            {/* <img   src={el.image_url} alt='imagen'></img> */}
             <p >{el.author}</p>
             <p >{el.title}</p>
             <p >{el.content}</p>
-          </>
+          </div>
         ))}
       </ul>
     </div>

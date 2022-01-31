@@ -1,12 +1,35 @@
 .navbar {
- display:inline-block;
-  
+  display: grid;
+  grid-template-columns: 3fr 0.5fr;
+  width: 100%;
+  height: 10%;
+  background: #ffffff;
+  align-items: center;
 }
-.navbaritems{
-    display: inline-block;
-    flex-direction: column;
-}
-.items li{
+/* .navbaritems {
+  display: grid;
+  grid-template-columns: repeat(5 0.5fr);
+  align-items: center;
+} */
+.navbaritems li {
   display: inline-block;
   padding: 5vh;
+  font-family: Public Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7px;
+  letter-spacing: 0.3em;
+  text-align: center;
+  padding: 3%;
+  color: #99989D
+}
+.request {
+  display: inline;
+  width: 165px;
+  height: 45px;
+  color: white;
+  border-color: transparent;
+  background: linear-gradient(90deg, #31cf70 4.85%, #2cb9cb 100%);
+  border-radius: 89px;
 }

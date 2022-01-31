@@ -4,10 +4,7 @@ import style from './Navbar.module.css'
 const Navbar = () => {
   return (
     <div className={style.navbar}>
-      <div>
-        {/* <h2>easy bank</h2> */}
-      </div>
-      <div className={style.items}>
+      <div className={style.navbaritems}>
         <ul>
           <li>Home</li>
           <li>About</li>
@@ -16,7 +13,9 @@ const Navbar = () => {
           <li>Careers</li>
         </ul>
       </div>
-      <button>Request invite</button>
+      <div>
+        <button className={style.request}>Request invite</button>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,68 @@
+.create {
+  display: flexbox;
+  left: 0%;
+  top: 20%;
+  background-color: #f9f9f9;
+}
+.create h2 {
+  display: flex;
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  margin-left: 10%;
+  color: #2d314e;
+}
+.create h4 {
+  display: flex;
+  font-family: Public Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 10%;
+  border-radius: nullpx;
+  color: #99989d;
+}
+.form {
+  display: grid;
+  width: 50%;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-left: 25%;
+  padding: 2%;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  align-items: center;
+
+  border-radius: 41px;
+  align-items: center;
+  align-content: center;
+}
+.form label {
+  display: block;
+  color: #2d314e;
+}
+.form input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+.form textarea {
+  width: 100%;
+  height: 20vh;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.buttonSubmit {
+  background: linear-gradient(90deg, #84e1a7 0%, #81d6db 100%);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 5vh;
+  color: white;
+  border: transparent;
+  border-radius: 47px;
+}
+.allArticles {
+  display: grid;
+}

@@ -12,6 +12,7 @@ function App() {
         <Navbar />
         <CreateArticle/>
         <AllArticles/>
+        <LatestArticles/>
         <Footer />
       </Fragment>
     </div>

@@ -1,4 +1,27 @@
 .footer {
-  background-color: #83cc0d;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #2D314E;
   height: 20%;
+  color: white;
+  font-family: Public Sans;
+  font-size: 0.7em;
+
+}
+.easy{
+  margin: 15% 0% 0% 15%;
+}
+
+
+
+.request {
+  display: inline;
+  width: 165px;
+  height: 45px;
+  color: white;
+  border-color: transparent;
+  background: linear-gradient(90deg, #31cf70 4.85%, #2cb9cb 100%);
+  border-radius: 89px;
+  margin-top: 5%;
+  margin-right: 5%;
 }

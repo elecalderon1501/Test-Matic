@@ -68,8 +68,15 @@ const CreateArticle = () => {
           value={date}
           onChange={e => setDate(e.target.value)}
         /> */}
-        <div >
-          <button className="buttonSubmit" type="submit" value="Add article" onChange={handleSubmit}>Save</button>
+        <div>
+          <button
+            className="buttonSubmit"
+            type="submit"
+            value="Add article"
+            onClick={handleSubmit}
+          >
+            Save
+          </button>
         </div>{' '}
       </form>
     </div>

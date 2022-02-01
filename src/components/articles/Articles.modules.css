@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+
+
 .create {
   display: flexbox;
   left: 0%;
@@ -33,6 +36,7 @@
   background-color: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   align-items: center;
+  font-family: Public Sans;
 
   border-radius: 41px;
   align-items: center;
@@ -55,14 +59,52 @@
 }
 
 .buttonSubmit {
-  background: linear-gradient(90deg, #84e1a7 0%, #81d6db 100%);
+  background: linear-gradient(90deg, #31cf75 0%, #2dbbc6 100%);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   width: 100%;
   height: 5vh;
   color: white;
   border: transparent;
   border-radius: 47px;
+  cursor: pointer;
 }
 .allArticles {
   display: grid;
+  font-size: 0.8em;
+}
+
+.previousArticles h2 {
+  display: flex;
+  font-family: Public Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  margin-left: 10%;
+  color: #2d314e;
+}
+.previousArticles h4 {
+  display: flex;
+  font-family: Public Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 10%;
+  border-radius: nullpx;
+  color: #99989d;
+}
+
+.previous {
+  display: grid;
+  grid-template-columns: 0.3fr repeat(2, 0.5fr) .4fr 0.1fr;
+  text-align: start;
+  align-items:flex-start;
+  font-family: Public Sans;
+  border: .5px solid #99989D;
+  
+}
+.editArticle{
+  color:#84E1A7;
+  font-size: .8em;
+  font-weight: 900;
+  cursor: pointer;
 }

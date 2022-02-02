@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
-
 .create {
   display: flexbox;
   left: 0%;
@@ -68,6 +67,20 @@
   border-radius: 47px;
   cursor: pointer;
 }
+
+.error{
+  background-color: #8af3b8;
+  color: white;
+  width: 15vh;
+  height: 5vh;
+  border-radius: 5px;
+  margin-left: 5%;
+  margin-bottom: 0%;
+  text-align:center;
+  align-items: center;
+align-content: center;  
+}
+
 .allArticles {
   display: grid;
   font-size: 0.8em;
@@ -95,16 +108,69 @@
 
 .previous {
   display: grid;
-  grid-template-columns: 0.3fr repeat(2, 0.5fr) .4fr 0.1fr;
+  grid-template-columns: 0.3fr repeat(2, 0.5fr) 0.4fr 0.1fr;
   text-align: start;
-  align-items:flex-start;
+  align-items: flex-start;
   font-family: Public Sans;
-  border: .5px solid #99989D;
+  border: 0.5px solid #99989d;
+}
+.editArticle {
+  color: #84e1a7;
+  font-size: 0.8em;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.alllatest {
+  display: inline-flex;
+}
+
+
+.new {
+  background: linear-gradient(90deg, #31cf75 0%, #2dbbc6 100%);
+  display: inline;
+  width: 165px;
+  height: 45px;
+  color: white;
+  border-color: transparent;
+  margin-left: 80%;
+  margin-top: 1vh;
+  border-radius: 89px;
+}
+
+.latest_articles {
+  display: inline-table;
+  width: 30vh;
+  height: 30vh;
+  padding: .5vh;
+  border-radius: 2vh;
+  margin-top: 5vh;
+  margin-left: 10%;
+  font-family: Public sans;
   
 }
-.editArticle{
-  color:#84E1A7;
-  font-size: .8em;
-  font-weight: 900;
+
+.one img {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 3vh;
+}
+.pageNumbers{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-left: 3vh;
+  padding-right: 3vh;
+
+}
+
+.pageNumbers button{
+  width: 5vh;
+  padding: 1vh;
+  margin: 3vh;
+  border-radius: 5px;
+  color: #2d314e;
+  background-color: white;
+  border-radius: 2px 2px 3px grey;
   cursor: pointer;
 }

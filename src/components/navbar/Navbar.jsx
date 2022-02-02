@@ -1,10 +1,10 @@
 import React from 'react'
-import style from './Navbar.module.css'
+import  './Navbar.css'
 
 const Navbar = () => {
   return (
-    <div className={style.navbar}>
-      <div className={style.navbaritems}>
+    <div className="navbar">
+      <div className="navbaritems">
         <ul>
           <li>Home</li>
           <li>About</li>
@@ -14,7 +14,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div>
-        <button className={style.request}>Request invite</button>
+        <button className="request">Request invite</button>
       </div>
     </div>
   )

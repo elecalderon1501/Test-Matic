@@ -1,11 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
-import './Articles.modules.css'
+import './Articles.css'
 const CreateArticle = () => {
   const [author, setAuthor] = useState('')
   const [content, setContent] = useState('')
   const [title, setTitle] = useState('')
+
+  const [error, setError] = useState('')
 
   const newArticle = {
     author,
@@ -15,7 +17,11 @@ const CreateArticle = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    // if([author, content, date, id, image_url, title ])
+    if([author, title, content].includes('')){
+      setError(true)
+      return;
+    }
+    setError(false)
 
     const createArticleApi = async () => {
       const url = `https://servicepad-post-api.herokuapp.com/articles/`
@@ -23,6 +29,10 @@ const CreateArticle = () => {
       console.log(respuesta.data.data)
       //  setAllArticles(respuesta.data.data)
     }
+    //reinicio form
+    setAuthor('')
+    setTitle('')
+    setContent('')
   }
   return (
     <div className="create">
@@ -30,6 +40,8 @@ const CreateArticle = () => {
       <h4>Publish a new blog article to feature in the Easybank homepage.</h4>
 
       <form className="form" onSubmit={handleSubmit}>
+
+        {error && <h4 className='error'>ERROR</h4>}
         <div className="formAuthor">
           <label htmlFor="author">Author</label>
           <input
